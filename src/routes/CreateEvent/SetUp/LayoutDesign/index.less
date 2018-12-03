@@ -1,0 +1,119 @@
+@import "~antd/lib/style/themes/default.less";
+@import '../../../common.less';
+@blue:#60b8e8;
+.Ditems{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    margin-left: 24px;
+    font-size: 12px;
+    color: #3e3e3e;
+    background: #fff;
+}
+.Ditems.isDMandatory{
+    border: 1px solid #cbcbcb;
+    background:#ebebeb; 
+}
+.isAllowed{
+    position: absolute;
+    right: 15px;
+    bottom:8px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    color:#ce5564;
+    background: rgba(241, 199, 199, 0.5);
+    text-align: center;
+}
+.Ditems.isDMandatory .isAllowed{
+    background:#f3f3f3;
+    color: #7b7777;
+}
+.DMandatory{
+    margin-left: 10%;
+    display:inline-block;
+    color: #929292;
+}
+.uploadDiv{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+    max-width: 180px;
+    padding-top: 10px;
+    :global{
+        .ant-upload.ant-upload-select-picture-card{
+            border: none;
+            background: transparent;
+            margin: auto;
+            margin-top: 10px;
+        }
+    }
+}
+.UploadImgD{
+    position: relative;
+    background: #eaeaea;
+    width: 110px;
+    height: 110px;
+    border-radius: 1rem;
+    margin: auto;
+    // width: 80%;
+}
+.UploadImgD img{
+    width: 100%;
+    height: 100%;
+}
+.UploadImgD i{
+    font-size: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    color:  rgba(95, 90, 90, 0.3);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.uploadB,.uploadB:hover,.uploadB:active,.uploadB:focus{
+    background: @blue;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.SaveButton{
+    border-color: @blue;
+    color: @blue;
+}
+.SavePrimaryButton,.SavePrimaryButton:hover{
+    border:@blue dashed 1px;
+    background-color: @blue !important;
+    color: #fff;
+    padding:0 30px;
+    margin-left: 20px;
+}
+.LayoutContent{
+    background-color: transparent;
+    :global{
+        .ant-select-selection__rendered{
+            line-height: 43px;
+        }
+        .ant-select-selection--single{
+           height: 43px;
+        }
+        .ant-select{
+            width: 100%;
+            height: 43px;
+            // padding-left: 24px;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media screen and (max-width: @screen-xl) {
+    .Ditems{
+        font-size: 14px;
+    }
+}

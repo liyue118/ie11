@@ -1,0 +1,252 @@
+@import '~antd/lib/style/themes/default.less';
+// mixins for clearfix
+// ------------------------
+/* you can make up upload button and sample style by using stylesheets */
+.ant-upload-select-picture-card i {
+  font-size: 32px;
+  color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+  margin-top: 8px;
+  color: #666;
+}
+:global{
+  .sponsorType .ant-form-item-label{
+    margin-right:-5px;
+    text-align: left
+  }
+  .overflowY::-webkit-scrollbar {
+    display: none;
+  }
+}
+.clearfix() {
+  zoom: 1;
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+  }
+}
+
+
+:global{
+  .rdw-editor-main{
+    min-height: 200px;
+  }
+  .ant-steps{
+    padding-top: 42px;
+    background: #f0f2f5;
+    padding-bottom: 16px
+  }
+  .ant-steps-item-process > .ant-steps-item-tail:after{
+    background: gray;
+  }
+  .ant-steps-item-wait > .ant-steps-item-tail:after{
+    background: gray;
+  }
+  .OrangizaCard{
+    display: inline-block;
+    margin-right: 24px;
+  }
+  .OrangizaCard .ant-card-cover > *{
+    height:145px;
+  }
+  .speakCard{
+    //display: inline-block;
+    margin-right: 24px;
+  }
+  .speakCard .ant-card-cover > *{
+    height:200px;
+  }
+  .addCard{
+    //display: inline-block;
+    margin-right: 24px;
+  }
+  .addCard .ant-card-cover > *{
+    height:233px;
+  }
+  
+  .addSpeaker .ant-card-cover{
+    //background: #e8e8e8
+  }
+  .addSpeaker .ant-card-cover > *{
+    height:100%;
+  }
+  .ant-card-wider-padding .addSpeaker .ant-card-body{
+    padding:0 32px;;
+  }
+
+  #setPadding{
+    border:0
+  }
+  #setPadding .ant-card-body{
+    padding:14px 32px;
+  }
+  .desc{
+    text-indent: 8px;
+  }
+  .mapCard{
+    width:95%;
+    margin:0 auto;
+    position:relative;
+    border:0;
+  }
+  .mapCard .ant-badge-not-a-wrapper{
+    position: absolute;
+    top:20px;
+    right:20px;
+  }
+  .mapCard .ant-badge-not-a-wrapper .ant-badge-count{
+    height: 30px;
+    min-width: 30px;
+    line-height: 30px;
+  }
+  .actCard{
+    width: 90%;
+    margin:0 auto;
+    background:#fff;
+    border:0
+  }
+  .actCard .ant-card-cover > *{
+    border-radius: 90px;
+    border:1px solid;
+  }
+  .actAvatar {
+    color: #333;
+    background-color: #fff;
+    height:180px;
+    padding:24px 24px 0 24px;
+  }
+  .actAvatar *{
+    line-height: 120px;
+    position: static;
+    font-size: 38px;
+    font-weight: 550;
+  }
+  .actMeta .ant-card-meta-title{
+    text-align: center;
+  }
+  .actList .ant-card-body{
+    padding-left: 36px;
+  }
+  .sponsorTitle .ant-steps-item-content .ant-steps-item-title{
+    width:150px;
+    margin-left: -20px;
+  }
+  .changeSummaryBorder .ant-steps-item-icon{
+    border:1px solid rgba(0, 0, 0, 0.25)
+  }
+}
+.Cheaders{
+  background:#dcdcdc;
+  padding: 0 20px 0 20px;
+  line-height: 36px;
+  height: 36px;
+  font-size: 18px;
+  // font-weight: bold;
+  font-weight: 500;
+  color: #000;
+}
+.CHRight{
+  float: right;
+  font-size: 13px;
+  // font-weight: normal;
+  color: #525656
+}
+.stepForm {
+  margin: 40px auto 0;
+  max-width: 500px;
+}
+
+.stepFormText {
+  margin-bottom: 24px;
+  :global {
+    .ant-form-item-label,
+    .ant-form-item-control {
+      line-height: 22px;
+    }
+  }
+}
+
+.result {
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 24px 0 8px;
+}
+
+.desc {
+  padding: 0 56px;
+  color: @text-color-secondary;
+  h3 {
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    color: @text-color-secondary;
+    line-height: 32px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    color: @text-color-secondary;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .desc {
+    padding: 0;
+  }
+}
+
+.information {
+  line-height: 22px;
+  :global {
+    .ant-row:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  .label {
+    color: @heading-color;
+    text-align: right;
+    padding-right: 8px;
+    @media screen and (max-width: @screen-sm) {
+      text-align: left;
+    }
+  }
+}
+
+.saveButton{
+  border-style:dashed;
+  outline: none;
+  margin:0px auto;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-15%);
+  padding:0 25px;
+  border-color: #60b8e8;
+  color:#60b8e8;
+}
+.reButton{
+  margin:0px auto;
+  position: absolute;
+  top:50%;
+  left:60%;
+  transform: translate(-50%,-15%);
+  padding:0 25px;
+}
+.setButton{
+  margin-left: 2px;
+}
+

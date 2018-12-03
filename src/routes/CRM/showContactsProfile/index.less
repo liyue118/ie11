@@ -1,0 +1,165 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../common.less';
+@blues:#00a1de;
+:global {
+    .ant-table-thead > tr > th.ant-table-column-has-filters{
+        font-size: 12px
+    }
+    .ant-input,.ant-select{
+        font-size:14px
+      }
+   
+}
+.Avatarimg{
+    width: 200px
+}
+.AvatarRight{
+    color: @blues;
+    text-align: center;
+    width: 50px;
+    float: right;
+    margin-left: 10px
+}
+.AvatarRight i{
+    font-size: 28px;
+}
+.AvatarRight div{
+    font-size: 20px
+}
+.profileList{
+    border: 1px solid rgba(0,0,0,0.15);
+    margin-bottom: 15px;
+    padding: 14px 20px 14px 25px;
+    margin-left: 0 !important;
+    margin-right:0 !important
+}
+.profileList div:first-child{
+    font-weight: bold
+}
+.DactionContent{
+    border: 0;
+    background: #fafafa;
+    border-radius: 50%;
+    color: @blues;
+    font-weight: bolder;
+    padding: 0;
+    width: 32px;
+}
+.DactionContent i{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.DactionContent::before{
+    // content: ":";
+}
+@blues:#00a1de;
+  .modalAddTitle{
+    color: #2e2e86;
+    font-size: 14px;
+  }
+.ModalAddFormitem{
+  margin-bottom: 5px
+}
+.fromItem{
+    // border: 1px solid rgba(0,0,0,0.1);
+    padding:0 12px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 2px !important;
+    :global {
+        .ant-form-item-control-wrapper{
+            display: inline-block;
+            // width: 70%
+            flex: 1;
+        }
+        .ant-form-item-children input{
+
+            font-size: 14px;
+        }
+        .ant-form-item-label label{
+        // // flex-shrink: 1;
+        // max-width: 82px;
+        color: #000;
+        // margin-left: 12px;
+        }
+        .ant-input,.ant-input:focus{
+        //    border: none !important;
+        //    color: rgba(0,0,0,0.5)
+                // list-style: none
+        }
+        *:focus { 
+            outline: none;
+            background-color: transparent;
+        }
+        .ant-select-selection{
+            border:none;
+        }
+        input:-webkit-autofill,select:-webkit-autofill {  
+            -webkit-box-shadow: 0 0 0px 1000px white  inset !important;  
+            box-shadow: 0 0 0px 1000px white  inset !important; 
+        } 
+        input{
+            outline: none;
+            border: none ;
+            border-style: none ;
+            text-shadow: none ;
+            -webkit-appearance: none ;
+            -webkit-user-select: text ;
+            outline-color: transparent ;
+            box-shadow: none;
+        }
+        .has-error .ant-input, .has-error .ant-input:hover,.has-error .ant-select-selection,.has-error .ant-input-number, .has-error .ant-time-picker-input{
+            border: 1px solid #f5222d;
+        }
+        .ant-btn-primary:hover, .ant-btn-primary:focus{
+            color:#15b0b2 !important ;
+        }
+        .ant-select-arrow{
+          background: #fff;
+          border-color: #fff;
+          color: rgba(0,0,0,0.3)
+        }
+        .ant-input-disabled{
+            background: #fff;
+            color: rgba(0,0,0,0.5);
+        }
+    }
+  }
+  .fpDiv div{
+    margin-bottom: 10px
+  }
+  .fpDiv div span:last-child{
+    color: rgba(0,0,0,0.5);
+  }
+  .fpItems{
+      border-top: 1px solid rgba(0,0,0,0.2);
+      padding-top: 20px;
+      margin-top: 10px;
+  }
+  .point{
+      width: 8px;
+      height: 8px;
+      background: #15b0b2;
+      border-radius: 50%;
+      margin-top: 6px
+  }
+  .progressDiv{
+      margin: 30px 0;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      flex-direction:row;
+      .title{
+          width: 5em
+      }
+       :global {
+                .ant-progress-bg{
+                    height: 12px;
+                }
+                .ant-progress-inner{
+                    height: 12px;
+                }
+
+       }
+  }

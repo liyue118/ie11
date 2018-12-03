@@ -1,0 +1,67 @@
+@import '../../common.less';
+@blue:#60b8e8;
+.fromItem{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding:0 12px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 10px !important;
+    :global {
+        .ant-form-item-control-wrapper{
+            display: inline-block;
+            // width: 70%
+            flex: 1;
+        }
+        .ant-form-item-label label{
+        // // flex-shrink: 1;
+        // max-width: 82px;
+        color: #000;
+        // margin-left: 12px;
+        }
+        .ant-input,.ant-input:focus{
+        //    border: none !important;
+        //    color: rgba(0,0,0,0.5)
+                // list-style: none
+        }
+        *:focus { 
+            outline: none;
+            background-color: transparent;
+        }
+        .ant-select-selection{
+            border:none;
+        }
+        input:-webkit-autofill,select:-webkit-autofill {  
+            -webkit-box-shadow: 0 0 0px 1000px white  inset !important;  
+            box-shadow: 0 0 0px 1000px white  inset !important; 
+        } 
+        input{
+            outline: none;
+            border: none ;
+            border-style: none ;
+            text-shadow: none ;
+            -webkit-appearance: none ;
+            -webkit-user-select: text ;
+            outline-color: transparent ;
+            box-shadow: none;
+        }
+        .has-error .ant-input, .has-error .ant-input:hover,.has-error .ant-select-selection,.has-error .ant-input-number, .has-error .ant-time-picker-input{
+            border: 1px solid #f5222d;
+        }
+        .ant-btn-primary:hover, .ant-btn-primary:focus{
+            color:#15b0b2 !important ;
+        }
+    }
+}
+.main{
+    :global {
+        .ant-calendar-picker{
+            width: 100%
+        }
+        .ant-btn-primary,.ant-btn-primary:hover{
+            background-color:@blue;
+            border-color:@blue;
+            color:@blue
+        }
+    }
+}

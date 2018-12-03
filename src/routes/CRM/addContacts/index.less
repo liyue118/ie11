@@ -1,0 +1,107 @@
+@import '~antd/lib/style/themes/default.less';
+@blues:#15b0b2;
+.modalAddTitle{
+    color: #2e2e86;
+    font-size: 14px;
+    margin-bottom: 10px
+  }
+.ModalAddFormitem{
+  margin-bottom: 5px
+}
+:global {
+.ant-input,.ant-select{
+  font-size:14px
+}
+.ant-modal-title{
+  font-size: 24px
+}
+
+.ant-select-arrow:before{
+  color: #fff
+}
+.ant-form-item-children input{
+  font-size: 12px
+}
+.ant-radio-wrapper{
+  font-size: 12px
+}
+.ant-radio-inner{
+  width: 15px;
+  height: 15px;
+}
+.avatar-uploader{
+  display: inline-block;
+  margin:auto
+}
+}
+.modalTextarea{
+  height: 75px !important;
+  margin-top: 5px;
+}
+.companyName:focus{
+  border: 1px solid red;
+}
+.addtolistContent{
+  // display: none;
+}
+.fromItem{
+  border: 1px solid rgba(0,0,0,0.1);
+  padding:0 12px;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction:row;
+  margin-bottom: 10px !important;
+  :global {
+      .ant-form-item-control-wrapper{
+          display: inline-block;
+          // width: 70%
+          flex: 1;
+      }
+      .ant-form-item-label label{
+      // // flex-shrink: 1;
+      // max-width: 82px;
+      color: #000;
+      // margin-left: 12px;
+      }
+      .ant-input,.ant-input:focus{
+      //    border: none !important;
+      //    color: rgba(0,0,0,0.5)
+              // list-style: none
+      }
+      input:focus { 
+          outline: none;
+          background-color: transparent;
+      }
+      .ant-select-selection{
+          border:none;
+      }
+      input:-webkit-autofill,select:-webkit-autofill {  
+          -webkit-box-shadow: 0 0 0px 1000px white  inset !important;  
+          box-shadow: 0 0 0px 1000px white  inset !important; 
+      } 
+      input{
+          outline: none;
+          border: none ;
+          border-style: none ;
+          text-shadow: none ;
+          -webkit-appearance: none ;
+          -webkit-user-select: text ;
+          outline-color: transparent ;
+          box-shadow: none;
+      }
+      .has-error .ant-input, .has-error .ant-input:hover,.has-error .ant-select-selection,.has-error .ant-input-number, .has-error .ant-time-picker-input{
+          border: 1px solid #f5222d;
+      }
+      .ant-btn-primary:hover, .ant-btn-primary:focus{
+          color:#15b0b2 !important ;
+      }
+      .ant-select-arrow{
+        background: #fff;
+        border-color: #fff;
+        color: rgba(0,0,0,0.3)
+      }
+      textarea.ant-input{
+        border: 0
+      }
+  }
+}

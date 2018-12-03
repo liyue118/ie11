@@ -1,16 +1,19 @@
-import '@babel/polyfill';
-import 'url-polyfill';
+import './polyfill';
 import dva from 'dva';
-
+import {IntlProvider, addLocaleData} from 'react-intl';
 import createHistory from 'history/createHashHistory';
+import ReactDOM from 'react-dom';
 // user BrowserHistory
 // import createHistory from 'history/createBrowserHistory';
 import createLoading from 'dva-loading';
 import 'moment/locale/zh-cn';
-//import FastClick from 'fastclick';
 //import './rollbar';
+import {getLocale} from '../src/utils/utils'
 
 import './index.less';
+import zhCN from './local/zh-CN';
+import enUS from '../src/local/en-US';
+// addLocaleData({...enUS,...zhCN});
 // 1. Initialize
 const app = dva({
   history: createHistory(),
@@ -24,11 +27,12 @@ app.model(require('./models/global').default);
 
 // 4. Router
 app.router(require('./router').default);
+// 5. Star
+const App = app.start();
 
-// 5. Start
-app.start('#root');
+var de_locale=getLocale();
+de_locale=require('../src/local/'+de_locale+'.js').default;
+ReactDOM.render(<IntlProvider locale="en" messages={de_locale} ><App /></IntlProvider>,document.getElementById('root'));
 
-
-//FastClick.attach(document.body);
-
-export default app._store;  // eslint-disable-line
+// ReactDOM.render(<IntlProvider locale="zh" messages={zhCN}><App /></IntlProvider>);
+export default app._store; // eslint-disable-line

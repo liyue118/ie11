@@ -1,0 +1,202 @@
+@import '~antd/lib/style/themes/default.less';
+@blues:#00a1de;
+:global {
+.ant-list-pagination{
+    height: 34px;
+}
+#toggleLink .ant-tabs{
+    display: inline-block;
+    color: #fff;
+    height: 45px;
+    float: right;
+    margin-right: 30px;
+    width: 200px;
+}
+#toggleLink .ant-tabs-bar{
+    margin: 0px;
+    border-bottom: 0px;
+}
+#toggleLink .ant-tabs-ink-bar{
+    background-color:#86BC26;
+}
+#toggleLink .ant-tabs-nav .ant-tabs-tab-active{
+    color: #86BC26;
+}
+#toggleLink{
+    color:#fff;
+    background-color: #363B41;
+    height: 45px;
+}
+#toggleLink .ant-tabs-content{
+   display: none;
+}
+.ant-table-selection-column{
+    opacity: 0;
+}
+.ant-checkbox-inner{
+    width: 15px;
+    height: 15px;
+}
+.ant-table-row:hover .ant-table-selection-column,.ant-table-row-selected .ant-table-selection-column{
+    opacity:1;
+}
+
+.ant-carousel .slick-dots{
+    bottom: 20px;
+}
+.ant-carousel .slick-dots li button{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 1;
+}
+.ant-carousel .slick-prev,.ant-carousel .slick-prev:hover{
+    font-size: 30px;
+    left: 100px;
+    color:rgba(255, 255, 255, 0.6);
+    z-index: 2222;
+}
+.ant-carousel .slick-next,.ant-carousel .slick-next:hover{
+    font-size: 30px;
+    right:100px;
+    color:rgba(255, 255, 255, 0.6);
+}
+.ant-carousel .slick-next::before{
+    content: "\E61F"
+}
+.ant-carousel .slick-prev::before{
+    content: "\E620";
+}
+.ant-carousel .slick-dots li.slick-active button{
+ background: #00a1de;
+ width: 8px;
+}
+
+th.ant-table-selection-column{
+    opacity:1;
+}
+.ant-dropdown-menu-item a{
+    color: @blues
+}
+.ant-table-thead > tr > th.ant-table-column-has-filters{
+    font-size: 13px
+}
+.ant-table tr td:nth-child(2){
+    color: @blues;
+}
+.ant-tabs-nav-scroll{
+    text-align: center;
+}
+#userIndexList .ant-list-item-meta{
+    display:inline-block;
+    margin: 25px 0 25px 25px;
+    h4{
+        margin-bottom: 0px;
+    }
+}
+#userIndexList .countDown{
+    line-height: 85px;
+}
+#userIndexList .ant-list-item-content{
+    width: 210px;
+    float: right; 
+    position: relative;
+    top: 38px;
+}
+#userIndexList .listContent{
+
+}
+}
+//by jc start
+.arrowL {
+    color:#fff;
+}
+.arrowR {
+    color:#fff;
+}
+.carouselDiv{
+    position: relative;
+    height: 400px;
+    background: #000;
+}
+.carouselDiv .imgPosition{
+    position: absolute;
+    top:70%;
+    left:15%;
+    width: 145px;
+    height: 36px;
+}
+// #toggleLink{
+
+// }
+.toggleLogo{
+    height: 45px;
+    line-height: 45px;
+    margin-left: 57px;
+    display: inline-block;
+    font-family: Verdana;
+    font-size: 17px;
+    font-weight: bold;
+    span{
+        color: #86BC26;
+    }
+}
+
+//by jc end
+.DactionContent{
+    border: 0;
+    background: transparent;
+    border-radius: 50%;
+    color: @blues;
+    font-weight: bolder;
+    padding: 0;
+    width: 32px;
+}
+.DactionContent i{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.DactionContent::before{
+    // content: ":";
+}
+.selectedSpan{
+    display: none
+}
+.selectedDropdowm,.selectedDropdowm:hover{
+    color: @blues;
+    border: 1px solid @blues;
+}
+.tableAddtolistSelectedV{
+    visibility: visible;
+}
+.tableAddtolistSelectedH{
+    visibility: hidden;
+    opacity: 0;
+}
+.navImgBar{
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    position: relative;
+    .navImgBar_Title{
+        width: 600px;
+        position: absolute;
+        top:28%;
+        left: 15%;
+        .navImgBar_Title_h1{
+            color:#fff;
+        }
+        .navImgBar_Title_h2{
+            color:#86BC26;
+        }
+    }
+}
+.navImgBar_Img{
+    width: 15%;
+    // height: 45%;
+    position: absolute;
+    right: 20%;
+    top: 15%;
+}

@@ -1,0 +1,76 @@
+@import '../../../common.less';
+@blues:#00a1de;
+.main{
+    background: #f5f7f6;
+    min-height: 100%;
+    :global{
+        .ant-tabs-nav .ant-tabs-tab-active{
+            margin-right:0;
+        }
+    }
+}
+.content{
+    margin: 10px 30px;
+    background: #fff;
+    min-height: 100%;
+    
+}
+.memberList{
+    padding: 5px 20px;
+}
+.fromItem{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding:0 12px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 10px !important;
+    :global {
+        .ant-form-item-control-wrapper{
+            display: inline-block;
+            // width: 70%
+            flex: 1;
+        }
+        .ant-form-item-label label{
+        // // flex-shrink: 1;
+        // max-width: 82px;
+        color: #000;
+        // margin-left: 12px;
+        }
+        .ant-input,.ant-input:focus{
+        //    border: none !important;
+        //    color: rgba(0,0,0,0.5)
+                // list-style: none
+        }
+        *:focus { 
+            outline: none;
+            background-color: transparent;
+        }
+        .ant-select-selection{
+            border:none;
+        }
+        input:-webkit-autofill,select:-webkit-autofill {  
+            -webkit-box-shadow: 0 0 0px 1000px white  inset !important;  
+        } 
+        
+        
+        input{
+            outline-color: invert ;
+            outline-style: none ;
+            outline-width: 0px ;
+            border: none ;
+            border-style: none ;
+            text-shadow: none ;
+            -webkit-appearance: none ;
+            -webkit-user-select: text ;
+            outline-color: transparent ;
+            box-shadow: none;
+        }
+        .has-error .ant-input, .has-error .ant-input:hover,.has-error .ant-select-selection,.has-error .ant-input-number, .has-error .ant-time-picker-input{
+            border: 1px solid #f5222d;
+        }
+        .ant-btn-primary:hover, .ant-btn-primary:focus{
+            color:#15b0b2 !important ;
+        }
+    }
+}

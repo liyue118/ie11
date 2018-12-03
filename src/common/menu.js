@@ -11,6 +11,68 @@ const menuData = [
       path: 'login',
     }],
   },
+  {
+    name: 'Home',
+    icon: 'icon-cc-home',
+    path: 'home/list',
+    // children: [{
+    //     name: 'dashboard',
+    //     path: 'list'
+    //   }
+    // ],
+  },
+  {
+    name: 'Events',
+    icon:'icon-rili',
+    path: 'event',
+    children: [{
+      name: 'Draft',
+      path: 'draft'
+    },{
+      name:'Upcoming',
+      path:'upcoming'
+    },{
+      name:'InProgress',
+      path:'current'
+    },{
+      name:'Past',
+      path:'past'
+    }],
+  },{
+    name:'CRM',
+    icon:'icon-lianxiren',
+    path:'crm',
+    children: [{
+      name: 'Companies',
+      path: 'company',
+    },{
+      name: 'Contacts',
+      path: 'contacts',
+    }],
+  },{
+    name:'Finance',
+    icon:'icon-caiwu',
+    path:'finance',
+    children:[{
+      name:'Invoice',
+      path:'information'
+    },{
+      name:'Payment',
+      path:'payment'
+    }]
+  },
+  // {
+  //   name: 'userInterface',
+  //   path: 'userInterface',
+  //   icon:'icon-lianxiren',
+  //   children: [{
+  //     name: 'dashboard',
+  //     path: 'userIndex',
+  //   }, {
+  //       name: 'dashboard',
+  //       path: 'userIndexPhone',
+  //     }],
+  // },
 ];
 
 function formatter(data, parentPath = '/', parentAuthority) {

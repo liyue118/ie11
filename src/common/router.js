@@ -77,7 +77,90 @@ export const getRouterData = app => {
     '/user/login':{
       component: dynamicWrapper(app, ['login','personLoginAuthCodeResult'], () => import('../routes/User/Login')),
     },
-    
+    '/user/chooseLogin':{
+      component: dynamicWrapper(app, [], () => import('../routes/User/ChooseLogin')),
+    },
+    '/user/register':{
+      component: dynamicWrapper(app, ['register'], () => import('../routes/User/Register')),
+    },
+    '/user/forgotPassword':{
+      component: dynamicWrapper(app, ['register'], () => import('../routes/User/ForgotPass')),
+    },
+    '/home':{
+      component: dynamicWrapper(app, [], () => import('../layouts/BasicLayout')),
+    },
+    '/home/list':{
+      component: dynamicWrapper(app, ['homelist'], () => import('../routes/Home/List')),
+    },
+    '/event':{
+      component: dynamicWrapper(app, [], () => import('../layouts/BasicLayout')),
+    },
+    '/event/draft':{
+      component: dynamicWrapper(app, ['event'], () => import('../routes/Event/Draft')),
+    },
+    '/event/upcoming':{
+      component: dynamicWrapper(app, [], () => import('../routes/Event/Upcoming')),
+    },
+    '/event/current':{
+      component: dynamicWrapper(app, [], () => import('../routes/Event/Current')),
+    },
+    '/event/past':{
+      component: dynamicWrapper(app, [], () => import('../routes/Event/Past')),
+    },
+    '/event/create':{
+      component: dynamicWrapper(app, [], () => import('../routes/Event/Create')),
+    },
+    '/crm':{
+      component: dynamicWrapper(app, [], () => import('../layouts/BasicLayout')),
+    },
+    // '/crm/report':{
+    //   component: dynamicWrapper(app, [], () => import('../routes/CRM/Report')),
+    // },
+    '/crm/company':{
+      component: dynamicWrapper(app, [], () => import('../routes/CRM/Company')),
+    },
+    '/crm/contacts':{
+      component: dynamicWrapper(app, ['contacts','common'], () => import('../routes/CRM/Contacts')),
+    },
+    '/finance':{
+      component: dynamicWrapper(app, [], () => import('../layouts/BasicLayout')),
+    },
+    '/finance/information':{
+      component: dynamicWrapper(app, ['event'], () => import('../routes/Finance/Information')),
+    },
+    '/finance/payment':{
+      component: dynamicWrapper(app, [], () => import('../routes/Finance/Payment')),
+    },
+    '/userInterface':{
+      component: dynamicWrapper(app, [], () => import('../layouts/UserInterfaceLayout')),
+    },
+    '/userInterface/userIndex':{
+      component: dynamicWrapper(app, ['userIndex'], () => import('../routes/UserInterface/UserIndex')),
+    },
+    '/userInterface/userIndexPhone':{
+      component: dynamicWrapper(app, ['userIndex'], () => import('../routes/UserInterfacePhone/UserIndex')),
+    },
+    '/userInterface/registerEvent': {
+      component: dynamicWrapper(app, ['registerEvent'], () => import('../routes/UserInterface/RegisterEvent')),
+    },
+    '/userInterface/registerEventPhone': {
+      component: dynamicWrapper(app, ['registerEvent'], () => import('../routes/UserInterfacePhone/RegisterEvent')),
+    },
+    '/userInterface/eventDetails': {
+      component: dynamicWrapper(app, ['eventDetails'], () => import('../routes/UserInterface/EventDetails')),
+    },
+    '/userInterface/eventDetailsPhone': {
+      component: dynamicWrapper(app, ['eventDetails'], () => import('../routes/UserInterfacePhone/EventDetails')),
+    },
+    '/userInterface/personalSetting': {
+      component: dynamicWrapper(app, ['personalSetting'], () => import('../routes/UserInterface/PersonalSetting')),
+    },
+    '/userInterface/personalInfos': {
+      component: dynamicWrapper(app, ['personalInfos'], () => import('../routes/UserInterface/PersonalInfos')),
+    },
+    // '/user/:id': {
+    //   component: dynamicWrapper(app, [], () => import('../routes/User/SomeComponent')),
+    // },
   };
   // Get name from ./menu.js or just set it in the router data.
   const menuData = getFlatMenuData(getMenuData());

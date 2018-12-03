@@ -1,0 +1,87 @@
+@import "~antd/lib/style/themes/default.less";
+@import '../../common.less';
+@blue:#60b8e8;
+.Ditems{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    margin-left: 24px;
+    color: #3e3e3e;
+    background: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    :global{
+        .ant-avatar{
+            background: #e6e4e4;
+            width: 80px;
+            height: 80px;
+            /* line-height: 32px; */
+            border-radius: 50%;
+        }
+        .ant-avatar > *{
+            font-size: 38px;
+             line-height: 75px;
+        }
+    }
+}
+.CustomFieldInput{
+    position: absolute;
+    z-index: 2;
+    left: 124px;
+    top: 5px;
+}
+.Ditems.isDMandatory{
+    border: 1px solid #cbcbcb;
+    background:#ebebeb; 
+}
+.isAllowed{
+    position: absolute;
+    right: 15px;
+    bottom:5px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    color:#ce5564;
+    background: rgba(241, 199, 199, 0.5);
+    text-align: center;
+}
+.Ditems.isDMandatory .isAllowed{
+    background:#f3f3f3;
+    color: #7b7777;
+}
+.unclick{
+    background: #ebebeb
+}
+.DMandatory{
+    
+    display:inline-block;
+    color: #929292;
+}
+.Ditems .title{
+    min-width: 80px;
+    display: inline-block;
+}
+.AdressDiv{
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding:10px 20px;
+    float: left;
+}
+.AdressFDiv{
+    padding: 0;
+    overflow: hidden;
+}
+.bitdiv{
+    border-color: #ce5564;
+
+}
+.bitdiv .DMandatory{
+    color: #ce5564;
+}
+@media screen and (max-width: @screen-xl) {
+    .Ditems{
+        font-size: 14px;
+    }
+}

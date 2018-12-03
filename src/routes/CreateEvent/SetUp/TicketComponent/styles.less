@@ -1,0 +1,126 @@
+@bule:#4db5eb;
+@green:#59c34b;
+.main{
+    background: #fff;
+    padding: 10px 30px;
+    :global{
+        a{
+            text-decoration: none
+        }
+        .anticon-edit,.anticon-close{
+            padding: 0 5px;
+            cursor: pointer;
+            color: #efe4e4
+        }
+        .anticon-edit:hover,.anticon-close:hover{
+            color: #fff;
+        }
+    }
+}
+.main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.main ul li{
+    margin-bottom: 10px;
+}
+.main h1{
+    margin-bottom: 0;
+}
+.blue{
+    background: @bule;
+    color: #fff;
+}
+.green{
+    background: @green;
+    color: #fff;
+}
+.TRight{
+    float: right;
+}
+.TicketComTitle{
+    line-height: 50px;
+    padding: 0 13px;
+}
+.TRight i{
+    // margin-left: 5px;
+}
+.TicketAount{
+    color: #fff;
+    margin-top: 2px;
+    padding: 10px 25px;
+    height: 83px;
+}
+.TicketAddDiv{
+    padding: 10px 30px;
+    border:1px dashed @bule;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.TicketAddDiv img{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px
+}
+.fromItem{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding:0 12px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 10px !important;
+    :global {
+        .ant-form-item-control-wrapper{
+            display: inline-block;
+            // width: 70%
+            flex: 1;
+        }
+        
+        .ant-input-number-handler-up-inner:before{
+            content: ""
+        }
+        .ant-form-item-label label{
+        // // flex-shrink: 1;
+        // max-width: 82px;
+        color: #000;
+        // margin-left: 12px;
+        }
+        .ant-input,.ant-input:focus{
+        //    border: none !important;
+        //    color: rgba(0,0,0,0.5)
+                // list-style: none
+        }
+        *:focus { 
+            outline: none;
+            background-color: transparent;
+        }
+        .ant-select-selection{
+            border:none;
+        }
+        input:-webkit-autofill,select:-webkit-autofill {  
+            -webkit-box-shadow: 0 0 0px 1000px white  inset !important;  
+        } 
+        
+        
+        input{
+            outline-color: invert ;
+            outline-style: none ;
+            outline-width: 0px ;
+            border: none ;
+            border-style: none ;
+            text-shadow: none ;
+            -webkit-appearance: none ;
+            -webkit-user-select: text ;
+            outline-color: transparent ;
+            box-shadow: none;
+        }
+        .has-error .ant-input, .has-error .ant-input:hover,.has-error .ant-select-selection,.has-error .ant-input-number, .has-error .ant-time-picker-input{
+            border: 1px solid #f5222d;
+        }
+        .ant-btn-primary:hover, .ant-btn-primary:focus{
+            color:#15b0b2 !important ;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@import "~antd/lib/style/themes/default.less";
+
+
+:global {
+  .ant-input-affix-wrapper .ant-input:not(:first-child) {
+    padding-left: 42px;
+  }
+  #root{
+    position: relative;
+  }
+  .getCaptcha {
+    display: block;
+    width: 100%;
+  }
+}
+.main {
+    background-image: url(../../assets/bg11920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    position:relative;
+    width:100%;
+  .loginform{
+    width:375px;
+    margin: 16px auto 0 auto;
+  }
+  .formMain {
+    position: absolute;
+    width:400px;
+    top:38%;
+    left:50%; 
+    transform: translate(-50%,-15%);
+  }
+  .firstname{
+    width:48%;
+    float: left;
+    margin-right: 2%;
+  }
+  .lastname{
+    width:50%;
+    float: left;
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+      visibility: hidden;
+      font-size: 0;
+      height: 0;
+    }
+  }
+  .loginform input{
+    border-radius: 5px;
+    //background-color: rgba(255,255,255,0.4);
+  }
+  .clickme {
+    float: right;
+    color:@primary-color
+  }
+  button{
+    width:100%;
+  }
+  .success,
+.warning,
+.error {
+  transition: color 0.3s;
+}
+
+.success {
+  color: @success-color;
+}
+
+.warning {
+  color: @warning-color;
+}
+
+.error {
+  color: @error-color;
+}
+
+.progress-pass > .progress {
+  :global {
+    .ant-progress-bg {
+      background-color: @warning-color;
+    }
+  }
+}
+}

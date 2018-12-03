@@ -1,0 +1,68 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../common.less';
+@blues:#00a1de;
+:global {
+.ant-table-selection-column{
+    opacity: 0;
+}
+.ant-checkbox-inner{
+    width: 15px;
+    height: 15px;
+}
+.ant-table-row:hover .ant-table-selection-column,.ant-table-row-selected .ant-table-selection-column{
+    opacity:1;
+}
+
+th.ant-table-selection-column{
+    opacity:1;
+}
+.ant-dropdown-menu-item a{
+    color: @blues
+}
+.ant-table{
+    font-size: 14px
+}
+.ant-table tr td:nth-child(2){
+    color: @blues;
+    font-size: 13px
+}
+
+}
+.DactionContent{
+    border: 0;
+    background: #fafafa;
+    border-radius: 50%;
+    color: @blues;
+    font-weight: bolder;
+    padding: 0;
+    width: 32px;
+}
+.DactionContent i{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.DactionContent::before{
+    // content: ":";
+}
+.selectedSpan{
+    display: none
+}
+.selectedDropdowm,.selectedDropdowm:hover{
+    color: @blues;
+    border: 1px solid @blues;
+}
+.tableAddtolistSelectedV{
+    visibility: visible;
+}
+.tableAddtolistSelectedH{
+    visibility: hidden;
+    opacity: 0;
+}
+.collapse{
+    background: #f5f5f6;
+    padding: 20px 0
+}
+.collapse a{
+    color: rgba(0, 0, 0, 0.5)
+}
