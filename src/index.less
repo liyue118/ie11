@@ -1,0 +1,51 @@
+html,
+body,
+:global(#root){
+  height: 100%;
+  //background: #000000;
+  font-family: "微软雅黑";
+}
+
+:global(.ant-layout) {
+  min-height: 100%;
+}
+:global(.ant-form){
+  font-family: "微软雅黑" !important;
+}
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// temp fix for https://github.com/ant-design/ant-design/commit/a1fafb5b727b62cb0be29ce6e9eca8f579d4f8b7
+:global {
+  .ant-spin-container {
+    overflow: visible !important;
+  }
+
+  .global-spin {
+    width: 100%;
+    margin: 40px 0 !important;
+  }
+  .draftCard .ant-card-wider-padding .ant-card-body{
+    padding:0
+  }
+  .ant-form-item{
+    margin-bottom: 3px !important;
+  }
+  .ant-steps-label-vertical .ant-steps-item-content{
+    width:110px !important
+  }
+  .Card .ant-card-body{
+    padding:14px !important;
+  }
+  .ant-select-arrow{
+    background: #fff !important;
+    border: 1px solid #fff !important;
+  }
+}

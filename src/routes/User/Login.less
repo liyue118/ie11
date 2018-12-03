@@ -1,0 +1,81 @@
+@import "~antd/lib/style/themes/default.less";
+
+
+:global {
+  .ant-input-affix-wrapper .ant-input:not(:first-child) {
+    padding-left: 42px;
+  }
+  #root{
+    position: relative;
+  }
+}
+.main {
+    background-image: url(../../assets/bg1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    position:relative;
+    width:100%;
+  .title{
+    margin-bottom: 18px;
+  }
+  .items{
+    margin-top: 12px;
+  }
+  .formMain {
+    position: absolute;
+    width:400px;
+    top:45%;
+    left:50%; 
+    transform: translate(-50%,-15%);
+  }
+  .loginform{
+    width:375px;
+    margin: 22px auto 0 auto;
+  }
+  .loginform input{
+    height:42px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.4);
+  }
+  .prefixIcon {
+    font-size: @font-size-base;
+    color:rgba(255,255,255,0.4);
+  }
+  .clickme {
+    float: right;
+  }
+  .icon {
+    font-size: 24px;
+    color: rgba(255,255,255,0.6);
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color .3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+  .login-form-forgot{
+    float: right;
+  }
+  button{
+    width:100%;
+  }
+  .other {
+    text-align: left;
+
+     a{
+       color:#fff
+     }
+    .register {
+      float: right;
+    }
+  }
+}
+
+
+
+
